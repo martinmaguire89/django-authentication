@@ -25,7 +25,7 @@ SECRET_KEY = '39(zg5rge^+4&uov5e#1w7-^vo^#5=956qm$0&y$lzb_sz4qx*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-b93c7865-7370-4c77-8d20-10474531edb9.ws-eu01.gitpod.io']
+ALLOWED_HOSTS = ['8000-b93c7865-7370-4c77-8d20-10474531edb9.ws-eu01.gitpod.io', 'localhost']
 
 
 # Application definition
@@ -119,3 +119,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MESSAGE_STORAGE = "django.contrib.messages.storage.session.SessionStorage"
